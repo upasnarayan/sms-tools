@@ -12,8 +12,8 @@ import utilFunctions as UF
 
 def sineModelMultiRes(x, fs, ws, Na, Bs, t):
     """
-    Analysis/synthesis of a sound using the sinusoidal model, without sine tracking
-    x: input array sound, ws = (w1, w2, w3): analysis windows, Na = (N1, N2, N3): size of complex spectrums,
+    Analysis/synthesis of a sound using the sinusoidal multi-resolution model, without sine tracking
+    x: input array sound, ws = (w1, w2, w3): analysis windows, Na = (N1, N2, N3): sizes of complex spectrums,
        Bs = (B1, B2, B3): frequency bands for multi-res sine model, t: threshold in negative dB 
     returns y: output array sound
     """
