@@ -68,11 +68,11 @@ def sineModelMultiRes(x, fs, ws, Na, Bs, t):
         pin += H                                                       # advance sound pointer
     return y
 
-def main(inputFile='../../sounds/bendir.wav', window='hamming', Ms=(2001, 2001, 2001),
-                    Na=(2048, 2048, 2048), Bs=(1000, 5000, 22050), t=-80):
+def main(inputFile='../../sounds/orchestra.wav', window='blackman', Ms = (1765, 675, 675),
+                    Na=(2048, 2048, 2048), Bs=(200, 420, 22050), t=-80):
     """
     Perform analysis/synthesis using the sinusoidal multi-resolution model
-    inputFile: input sound file (monophonic/polyphonic with sampling rate of 44100)
+    inputFile: input sound file (polyphonic with sampling rate of 44100)
     window: analysis window type (rectangular, hanning, hamming, blackman, blackmanharris)  
     M: tuple of analysis window size
     N: tuple of fft sizes (power of two, bigger or equal than M)
